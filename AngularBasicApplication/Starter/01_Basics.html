@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>First Demo</title>
+</head>
+<body>
+    <div ng-app="">
+        <label>Enter First No:</label>
+        <input type="number" ng-model="firstNumber"/><br /><br />
+
+        <label>Enter Second No:</label>
+        <input type="number" ng-model="secondNumber"/><br /><br />
+
+        <div> Result = {{firstNumber + secondNumber}}</div>
+        <br />
+        <br />
+        <div ng-bind="firstNumber"></div>
+    </div>
+    <script src="../Scripts/angular.js"></script>
+</body>
+</html>

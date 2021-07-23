@@ -1,0 +1,6 @@
+c:\users\derrick\documents\visual studio 2013\Projects\AngularBasicApplication\AngularBasicApplication\bin\AngularBasicApplication.dll.config
+c:\users\derrick\documents\visual studio 2013\Projects\AngularBasicApplication\AngularBasicApplication\bin\AngularBasicApplication.dll
+c:\users\derrick\documents\visual studio 2013\Projects\AngularBasicApplication\AngularBasicApplication\bin\AngularBasicApplication.pdb
+c:\users\derrick\documents\visual studio 2013\Projects\AngularBasicApplication\AngularBasicApplication\obj\Debug\AngularBasicApplication.csprojResolveAssemblyReference.cache
+c:\users\derrick\documents\visual studio 2013\Projects\AngularBasicApplication\AngularBasicApplication\obj\Debug\AngularBasicApplication.dll
+c:\users\derrick\documents\visual studio 2013\Projects\AngularBasicApplication\AngularBasicApplication\obj\Debug\AngularBasicApplication.pdb
