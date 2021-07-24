@@ -3,13 +3,13 @@
 <head>
     <title>First Demo</title>
 </head>
-<body ng-app>
-    <div ng-init="firstNumber=30;secondNumber=50">
+<body ng-app="FirstApp">
+    <div ng-controller="NumberController">
         <label>Enter First No:</label>
-        <input type="number" ng-model="firstNumber"/><br /><br />
+        <input type="number" ng-model="firstNumber" /><br /><br />
 
         <label>Enter Second No:</label>
-        <input type="number" ng-model="secondNumber"/><br /><br />
+        <input type="number" ng-model="secondNumber" /><br /><br />
 
         <div> Result = {{firstNumber + secondNumber}}</div>
         <br />
@@ -17,5 +17,14 @@
         <div ng-bind="firstNumber"></div>
     </div>
     <script src="../Scripts/angular.js"></script>
+    <script>
+        var app = angular.module("FirstApp", []);
+
+        app.controller("NumberController", function ($scope) {
+
+            $scope.firstNumber = 77;
+            $scope.secondNumber = 88;
+        })
+    </script>
 </body>
 </html>
