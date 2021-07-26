@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/MyScripts/App.js"></script>
+    <style>
+        div{
+            padding:10px;
+            margin:10px;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+    <input type="text" ng-model="name" />   <!--For Debugging Purposes only of $rootScope-->
+    
+    <div ng-controller="RedController">
+        <div style="background-color:{{favColor}};color:{{color}}">
+            {{favColor}}
+        </div>
+    </div>
+
+    <div ng-controller="BlueController">
+        <div style="background-color:{{favColor}};color:{{color}}">
+            {{favColor}}
+        </div>
+    </div>
+</body>
+</html>
