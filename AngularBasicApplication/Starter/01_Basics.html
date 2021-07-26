@@ -11,10 +11,10 @@
         <label>Enter Second No:</label>
         <input type="number" ng-model="secondNumber" /><br /><br />
 
-        <div> Result = {{firstNumber + secondNumber}}</div>
-        <br />
-        <br />
-        <div ng-bind="firstNumber"></div>
+        <button type="button" ng-click="getResults()">Get Results</button><br /><br />
+
+        <div> Result = {{result}}</div>
+        
     </div>
     <script src="../Scripts/angular.js"></script>
     <script>
@@ -24,6 +24,11 @@
 
             $scope.firstNumber = 77;
             $scope.secondNumber = 88;
+
+            $scope.getResults = function () {
+
+                $scope.result = $scope.firstNumber + $scope.secondNumber;
+            }
         })
     </script>
 </body>
