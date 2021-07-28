@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/MyScripts/AppNested.js"></script>
+    <style>
+        div{
+            margin:10px;
+            border: 1px solid #b200ff;
+            margin-left:2em;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+
+    <div ng-controller="CountryController">
+        {{name}}
+
+        <div ng-controller="StateController">
+            {{$parent.name}} - {{name}} - {{iso}}
+
+            <div ng-controller="CityController">
+                {{$parent.$parent.name}} - {{$parent.name}} - {{name}}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
