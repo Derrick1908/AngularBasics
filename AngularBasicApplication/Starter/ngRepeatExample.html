@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using ng-repeat</title>
+</head>
+<body ng-app="NgRepeatApp">
+    <div ng-controller="EmployeeController">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr.No.</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>IsPermanent</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="e in employees">
+                    <td>{{$index + 1}}</td>
+                    <td>{{e.id}}</td>
+                    <td>{{e.name}}</td>
+                    <td>{{e.salary}}</td>
+                    <td>{{e.isPermanent}}</td>
+                    <td><button>Apply Leave</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/MyScripts/AppNgRepeat.js"></script>
+</body>
+</html>

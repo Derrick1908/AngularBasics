@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using ng-repeat with objects</title>
+</head>
+<body ng-app="NgRepeatApp">
+    <div ng-controller="EmployeeController">
+        <ul>
+            <li ng-repeat="e in employees">
+                Employee - {{$index + 1}}
+                <ul>
+                    <li ng-repeat="(key,value) in e">
+                        {{key}} - {{value}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/MyScripts/AppNgRepeat.js"></script>
+</body>
+</html>
