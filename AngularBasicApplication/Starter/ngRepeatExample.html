@@ -23,7 +23,9 @@
                     <td>{{e.name}}</td>
                     <td>{{e.salary}}</td>
                     <td>{{e.isPermanent}}</td>
-                    <td><button>Apply Leave</button></td>
+                    <td><button ng-show="e.isPermanent">Apply Leave</button></td>
+                    <!--Can also use the Below Commented out line as an alternative -->
+                    <!--<td><button ng-show="e.isPermanent">Apply Leave</button></td>-->
                 </tr>
             </tbody>
         </table>
