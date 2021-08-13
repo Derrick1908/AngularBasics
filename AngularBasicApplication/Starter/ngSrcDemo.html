@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ng-src Demo</title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/MyScripts/AppNgSrc.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="CountryController">
+        <div>
+            Country : {{country.name}}
+        </div>
+        <div>
+            Capital : {{country.capital}}
+        </div>
+        <div>
+            <img ng-src="{{country.flag}}"
+                 alt="{{country.name + 'Flag'}}"
+                 width="200"
+                 height="100" />
+        </div>
+    </div>
+</body>
+</html>
