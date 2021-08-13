@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ng-Switch Demo</title>
+</head>
+<body ng-app="">
+
+    My Favorite Topic is:
+    <select ng-model="favTopic">
+        <option value="cup">World Cup</option>
+        <option value="tuts">Tutorials</option>
+        <option value="cars">Cars</option>
+    </select>
+
+    <hr />
+    <div ng-switch="favTopic">
+        <div ng-switch-when="cup">
+            <h1>World Cup</h1>
+            <p>Who will win the World Cup?</p>
+        </div>
+        <div ng-switch-when="tuts">
+            <h1>Tutorials</h1>
+            <p>Learn from Examples</p>
+        </div>
+        <div ng-switch-when="cars">
+            <h1>Cars</h1>
+            <p>Read about Cars</p>
+        </div>
+        <div ng-switch-default>
+            <h1>Switch</h1>
+            <p>Select Topic from the Dropdown, to switch the Content</p>
+        </div>
+    </div>
+
+    <hr />
+    <p>The ng-switch directive hides and shows HTML Sections depending on a certain value.</p>
+
+    <script src="../Scripts/angular.js"></script>
+
+</body>
+</html>
