@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using ng-Class</title>
+    <style type="text/css">
+        .highsalary{
+            background-color: #0094ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body ng-app="NgClassApp">
+    <div ng-controller="EmployeeController">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Is Permanent</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="e in employees" ng-class="{highsalary: e.salary > 5000}">
+                    <td>{{$index + 1}}</td>
+                    <td>{{e.id}}</td>
+                    <td>{{e.name}}</td>
+                    <td>{{e.salary}}</td>
+                    <td>{{e.isPermanent}}</td>
+                    <td><button>Apply Leave</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../Scripts/angular.js"></script>
+    <script src="../Scripts/MyScripts/AppNgClass.js"></script>
+
+</body>
+</html>

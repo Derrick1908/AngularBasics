@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" ng-app="">
+        
+        <div class="page-header">
+            <h1>Using ng-class <small>String Syntax</small></h1>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Type Your Class" ng-model="superClass" />
+                    </div>
+                </form>
+
+                <p>Try:</p>
+                <ul>
+                    <li>text-danger</li>
+                    <li>text-success</li>
+                    <li>text-uppercase</li>
+                    <li>bg-primary</li>
+                    <li>bg-info</li>
+                    <li>bg-danger</li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                
+                <div class="jumbotron text-center">
+                    <h2 ng-class="superClass">
+                        Test ng-class Directive
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="../Scripts/angular.min.js"></script>
+</body>
+</html>

@@ -70,10 +70,13 @@
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\MyScripts\App.js" />
     <Content Include="Scripts\MyScripts\AppNested.js" />
+    <Content Include="Scripts\MyScripts\AppNgClass.js" />
     <Content Include="Scripts\MyScripts\AppNgRepeat.js" />
     <Content Include="Starter\01_Basics.html" />
     <Content Include="Starter\NestedScopeDemo.html" />
     <Content Include="Starter\NestedScopeWithObjects.html" />
+    <Content Include="Starter\ngClassDemo.html" />
+    <Content Include="Starter\ngClassStringDemo.html" />
     <Content Include="Starter\ngRepeatExample.html" />
     <Content Include="Starter\ngRepeatExampleObject.html" />
     <Content Include="Starter\ngSwitchDemo.html" />
